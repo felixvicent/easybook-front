@@ -31,7 +31,12 @@
     font-family: 'Jost', sans-serif;
 }
 
+.header .intro span {
+    color: white;
+}
+
 .header .intro a {
+    width: 270px;
     text-decoration: none;
     background-color: white;
     color: #382623;
@@ -44,6 +49,75 @@
 }
 
 .header .intro a:hover {
+    box-shadow: 2px 1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.about {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.about .desc{
+    text-align: center;
+}
+
+.about .desc h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about .desc p {
+    font-size: 10pt;
+    line-height: 2;
+    font-family: 'Jost', sans-serif;
+}
+
+.about .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .cards .card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+
+.about .cards .card img {
+    width: 64px;
+    margin-bottom: 15px;
+}
+
+.about .cards .card span {
+    font-size: 10pt;
+    text-align: justify;
+}
+
+.about a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
     background-color: #382623;
     color: white;
+    font-size: 12pt;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.about a:hover {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8);
 }
