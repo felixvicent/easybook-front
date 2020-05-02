@@ -49,13 +49,13 @@
 }
 
 .menu li a:hover {
-    border: 1px solid white
+    color: teal;
 }
 
 .menu-open {
     transition: width 800ms ease;
     width: 85%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .menu-closed {
@@ -96,4 +96,18 @@
 
 .mobile-menu-opened .hamburguer-part:nth-child(3) {
     display: none;
+}
+
+.social {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
