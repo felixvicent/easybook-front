@@ -102,15 +102,15 @@
     display: none;
 }
 
-.social {
+.social ul {
+    opacity: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
-.social li a {
+.social ul li a {
     display: flex;
     align-items: center;
     justify-content: center;

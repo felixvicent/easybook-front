@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaHome, FaBook, FaBlog, FaInfoCircle, FaFacebookSquare, FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 import logo from '../../assets/logo.png';
@@ -68,17 +69,18 @@ export default function NavBar() {
             </div>
             <nav className="menu menu-closed" id='menu'>
                 <ul className="menu-list">
-                    <li><a href="/"><FaHome size={ 20 } /> HOME</a></li>
-                    <li><a href="/"><FaBook size={ 20 } />LIVROS</a></li>
+                    <li><Link to="/"><FaHome size={ 20 } /> HOME</Link></li>
+                    <li><Link to="/books"><FaBook size={ 20 } />LIVROS</Link></li>
                     <li><a href="/"><FaBlog size={ 20 } />BLOG</a></li>
                     <li><a href="/"><FaInfoCircle size={ 20 } />SOBRE NÓS</a></li>
                     <li className="social">
-                        <li><a href="/"><FaFacebookSquare /></a></li>
-                        <li><a href="/"><FaInstagram /></a></li>
-                        <li><a href="/"><FaWhatsapp /></a></li>
-                        <li><a href="/"><FaEnvelope /></a></li>
+                        <ul>
+                            <li><a href="/"><FaFacebookSquare /></a></li>
+                            <li><a href="/"><FaInstagram /></a></li>
+                            <li><a href="/"><FaWhatsapp /></a></li>
+                            <li><a href="/"><FaEnvelope /></a></li>
+                        </ul>
                     </li>
-                    
                 </ul>
             </nav>
         </div>
