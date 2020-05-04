@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHome, FaBook, FaBlog, FaInfoCircle, FaFacebookSquare, FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
-import logo from '../../../assets/logo.png';
+import logo from '../../assets/logo.png';
 import './styles.css'
 
 export default function NavBar() {
@@ -25,6 +25,7 @@ export default function NavBar() {
             removeClass(menu, 'menu-open')
             addClass(menu, 'menu-closed');
             menuList.setAttribute("style", "opacity: 0")
+            menuList.setAttribute("style", "display:none")
         }
     }
 
@@ -65,7 +66,7 @@ export default function NavBar() {
                 </div>
 
             </div>
-            <nav className="menu" id='menu'>
+            <nav className="menu menu-closed" id='menu'>
                 <ul className="menu-list">
                     <li><a href="/"><FaHome size={ 20 } /> HOME</a></li>
                     <li><a href="/"><FaBook size={ 20 } />LIVROS</a></li>

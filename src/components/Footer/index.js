@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 
-import logo from '../../../assets/logo.png';
+import logo from '../../assets/logo.png';
 import './styles.css'
 
 export default function Footer() {

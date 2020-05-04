@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.css'
 import bookImage from '../../assets/book.svg'
 import libraryImage from '../../assets/library.svg'
 import networkImage from '../../assets/network.svg'
 
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 export default function Home() {
     return(
@@ -19,7 +20,7 @@ export default function Home() {
                         nossos queridos livros nos proporcionam
                     </p>
 
-                    <a className="btn-books" href="/">Comece uma nova historia!</a>
+                    <Link className="btn-books" to="/books">Comece uma nova historia!</Link>
                     <span>OU</span>
                     <a className="btn-blog" href="/">Compartilhe sua historia!</a>
                 </div>

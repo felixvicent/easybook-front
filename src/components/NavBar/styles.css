@@ -64,6 +64,10 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+.menu-closed .menu-list {
+    display: none;
+}
+
 
 .hamburguer-part {
     background: #382623;
